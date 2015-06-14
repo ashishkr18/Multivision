@@ -1,0 +1,19 @@
+{
+  "name": "Multivision",
+  "version": "0.0.0",
+  "authors": [
+    "ashishkr18 <ashishkr18vmc@gmail.com>"
+  ],
+  "description": "\"Extreme Tech Training\"",
+  "moduleType": [
+    "node"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "toastr": "~2.1.1",
+    "angular": "~1.4.0",
+    "angular-resource": "~1.4.0",
+    "angular-route": "~1.4.0"
+  }
+}
