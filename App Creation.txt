@@ -1,0 +1,108 @@
+Install package control and then do ctrl+shift+p 
+package install
+
+-sublimelinter
+
+-HTML-CSS-JS Prettify (Ctrl+Shift+H)
+
+Pros:
+
+    Supports ST2/ST3
+    Handles HTML, CSS, JS
+    Great integration with Sublime's menus
+    Highly customizable
+    Per-project settings
+    Format on save option
+
+Cons:
+
+    Requires Node.js
+    Not great for embedded PHP
+supply node path
+
+Follow this manual link https://packagecontrol.io/installation#st2 for sublime
+inside C:\Users\Waheguru\AppData\Roaming\Sublime Text 2\Installed Packages 
+
+npm init
+npm install --save express
+
+.gitignore #new file to tell what not to commit
+
+git init
+git status
+git add -A
+git rm --cached
+
+git commit -m "First commit"
+
+npm install bower --save-dev  #or npm install -g bower #for globally    #To manage dependencies
+#Folder structure - app or server for server-side, can also use server for server side js (to avoid any name confusion server.js)and app for angular content
+#public for client side
+
+# his client side partials are in the same directory as his server side views
+
+.bowerrc #new file for client side dependencies
+#create bower.json file
+bower init
+
+npm config get prefix  #to see the path of the global npm dependencies and set it to bin eg: C:\Users\Waheguru\AppData\Roaming\npm
+
+now we can start with our client side dependencies using bower
+bower commands work similar to npm
+
+bower install jquery --save
+bower install toastr --save  #for client side notifications
+bower install angular angular-resource angular-route --save #for angular and modules that we need for angular
+
+#see the folder inside public/vendor now # makes it easier to install and maintain client side dependencies
+
+
+server.js
+environment variable value or a default value if it hasn't been set
+
+npm install nodemon -g  #to not restart server manually after every change to server.js
+
+nodemon server.js  #instead of node server.js
+
+npm install ejs --save  #to be found in your local pacakge.json #or npm install ejs -g #engine for html
+
+npm install stylus morgan body-parser --save  #installing 3 modules using npm
+
+create a layout.html file inside of server folder named 'includes' as a wrapper, toastr and bootstrap css
+create 'css' folder inside public and add 'bootstrap.css' and 'site.styl' for stylus. 
+For debugging use watchers
+Enter link to css files in layout.html
+
+In layout.html use site.css instead of site.styl
+
+question include html using ejs engine?
+
+New folder in public -> app and then app.js
+Now angular partials in views/partials/main.html
+
+install AngularJS-sublime-package/ in sublime
+
+npm install -g node-gyp #for mongoose
+npm update
+
+npm install mongodb --save  #throws multiple errors
+npm install mongoose --save  #ODMTo interact with the database mongodb #throws multiple errors like No repository field.
+No README data
+
+--TODO : include css etc using html,Angular check,mongodb
+
+mongo --dbpath
+ use multivision
+ show collections
+ db.messages.insert({message:'Hello Mongo'})	#messages collection created
+ 
+ D:\data\The Local Network\MEAN\Multivision>npm install grunt-cli bower yeoman ge
+nerator-angular-fullstack -g
+
+D:\data\The Local Network\MEAN\mean_sample>yo angular-fullstack #to generate scaffolding website
+>grunt serve	#automation livereload etc.
+
+search and use service for $http #currently not showing values using $q service
+
+batarang in chrome for debugging angular
+
